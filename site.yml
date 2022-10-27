@@ -7,6 +7,7 @@
         msg: "Just saying hello wtih ansible from AWX!"
 
     - name: Install net-tools
+      become: true
       apt:
         name: net-tools
         state: present
