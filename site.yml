@@ -1,0 +1,7 @@
+---
+- name: Print text
+  hosts: all
+  
+  tasks:
+    - debug:
+        msg: "Just saying hello wtih ansible from AWX!"
