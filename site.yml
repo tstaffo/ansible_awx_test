@@ -1,7 +1,13 @@
 ---
 - name: Print text
   hosts: all
+  become: true
   
   tasks:
     - debug:
         msg: "Just saying hello wtih ansible from AWX!"
+
+    - name: Install net-tools
+      apt:
+        name: net-tools
+        state: present
