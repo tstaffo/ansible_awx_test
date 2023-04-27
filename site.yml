@@ -9,7 +9,7 @@
         msg: "Just saying hello wtih ansible from AWX!"
         
     - name: Install net-tools
-      apt:
+      package:
         name: net-tools
         update_cache: yes
         
